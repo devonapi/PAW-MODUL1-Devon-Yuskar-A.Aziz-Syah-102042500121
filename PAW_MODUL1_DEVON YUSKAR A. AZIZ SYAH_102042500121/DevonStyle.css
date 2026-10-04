@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+ 
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+ 
+.navbar {
+    background-color: white;
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+}
+ 
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.brand {
+    font-weight: bold;
+    font-size: 18px;
+}
+ 
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+ 
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+}
+ 
+.hero {
+    padding: 30px 0;
+}
+ 
+.hero-box {
+    background-color: #1a1d24;
+    color: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+}
+ 
+.hero-box h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+ 
+.hero-box p {
+    margin-bottom: 20px;
+}
+ 
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+ 
+.btn-light {
+    background-color: white;
+    color: #222;
+}
+ 
+.btn-dark {
+    background-color: #1a1d24;
+    color: white;
+    width: 100%;
+}
+ 
+.btn:disabled {
+    background-color: #ccc;
+    color: #777;
+    cursor: not-allowed;
+}
+ 
+.catalog-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 20px;
+}
+ 
+.total-badge {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+ 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 50px;
+}
+ 
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.card h3 {
+    margin: 4px 0 10px;
+}
+ 
+.card-kategori {
+    font-size: 13px;
+    color: #777;
+}
+ 
+.promo {
+    color: #222;
+    font-weight: bold;
+}
+ 
+.harga-box {
+    margin-bottom: 15px;
+}
+ 
+.harga-coret {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+ 
+.harga {
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding: 12px 0;
+    margin-top: auto;
+}
+ 
+.status {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+ 
+.tersedia {
+    background-color: #d9f5e0;
+    color: #1f8a3f;
+}
+ 
+.habis {
+    background-color: #fde2e2;
+    color: #c0392b;
+}
+ 
+footer {
+    background-color: white;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+    color: #666;
+}
+ 
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+ 
